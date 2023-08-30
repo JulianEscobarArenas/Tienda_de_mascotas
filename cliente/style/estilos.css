@@ -57,9 +57,11 @@ img {
     margin-bottom: 20px;
 }
 
-
-
-
+.ig  iframe{
+    border: 2x solid;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
 
 
 .columna {
