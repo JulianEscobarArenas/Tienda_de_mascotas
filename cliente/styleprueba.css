@@ -1,0 +1,11 @@
+img{
+    border-radius: 30%;
+}
+
+
+.collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

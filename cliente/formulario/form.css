@@ -1,0 +1,111 @@
+/*https://getbootstrap.com/*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #5dc08f;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.form .container-inputs {
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    border-bottom: 2px solid #246eb9;
+}
+
+.form input[type="radio"] {
+    display: none;
+}
+
+.form .gender {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form .gender .male {
+    border-radius: 3px 0 0 3px;
+}
+
+.form .gender .female {
+    border-radius: 0 3px 3px 0;
+}
+
+.form .label-radio {
+    background: rgb(38, 87, 38);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 49.5%;
+}
+
+.form input[type="radio"]:checked+.label-radio {
+    background: green;
+}
+
+.form .terms {
+    text-align: center;
+    color: #424242;
+}
+
+.form .terms label {
+    margin-left: 10px;
+}
+
+.form .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.form .btn {
+    width: 100%;
+    text-align: center;
+    background: green;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.form .btn:hover {
+    background: rgb(38, 87, 38);
+}
