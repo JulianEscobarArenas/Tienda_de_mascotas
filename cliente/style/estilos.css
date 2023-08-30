@@ -80,12 +80,15 @@ img {
     text-align: center;
 }
 
-/*.todosflotan {
-        float: left;
-         text-decoration: none;    }*/
-
+footer {
+            background-color: #74C362;
+            color: #faf8f8;
+            padding: 15px;
+            clear: both;
+         }
 
 .pie {
+    clear: all;
     background-color: green;
     display: flex;
     justify-content: space-between;
