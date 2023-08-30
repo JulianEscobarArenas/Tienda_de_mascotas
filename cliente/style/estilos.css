@@ -1,6 +1,5 @@
 body {
     text-align: center;
-    margin-bottom: 30px;
     background-color: #5dc08f;
 }
 
@@ -32,7 +31,7 @@ div {
 /*header, section, footer, aside, nav, article, div, hgroup {border: 1px solid black; display: block; }*/
 
 .menu {
-    background: #74C362;
+    background: #57e437;
     color: black
 }
 
@@ -54,7 +53,7 @@ img {
     float: left;
     margin-right: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 
@@ -115,8 +114,9 @@ footer {
 }
 
 .logo {
-    width: 50px;
-    border-radius: 50%;
+    width: 99px;
+    border-radius: 100%;
+    border: solid 2px black;
 }
 
 .domi{
@@ -136,4 +136,13 @@ footer {
 
 .navbar{
     background-color: #baebd2;
+}
+
+#cabecera2{
+    display: flex;
+    justify-content: center;
+}
+
+.mapa{
+    margin-bottom: 100px;
 }
