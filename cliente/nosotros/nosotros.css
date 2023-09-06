@@ -68,29 +68,5 @@ footer {
     color: #fcfbfb;
     padding: 30px;
  }
-.pie{
-    clear: all;
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    
-}
 
-     .uno{
 
-        width: 45%;
-        height: 25%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-     }
-     
-     .ins{
-       
-        justify-content: center;
-        display: flex;
-        align-self: center;
-        width: 100px;
-        height: 100px;
-     }

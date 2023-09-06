@@ -4,9 +4,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-h1 {
-margin-top: -25px;
-}
+
 #cabecera2{
     display: flex;
     justify-content: center;
@@ -219,8 +217,9 @@ a svg{
     top : 50%;
     transform: translateY(-50%);
 }
+
 .siguiente {
-    left: 97%;
+    left: 100%;
 }
 
 .boton {
@@ -264,19 +263,14 @@ footer {
     background-color: #74C362;
     color: #fcfbfb;
     padding: 30px;
+    text-align: center;
  }
 
-
-
-.uno {
-
-width: 45%;
-height: 25%;
-display: flex;
-justify-content: center;
-flex-direction: column;
+ h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
-
 
 
 
