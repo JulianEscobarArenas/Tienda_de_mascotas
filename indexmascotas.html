@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cliente/style/estilos.css">
+</head>
+
+<body>
+   <div id="menu">
+    <div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./cliente/formulario/iniciar sesion.html">INICIAR SESION</a>
+        <a href="./cliente/nosotros/nosotros.html">NOSOTROS</a>
+    
+    </div>
+
+    <nav>
+        <div class="topnav topnavD">
+            <a href="#" onclick="openNav()" class="hover">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                </svg>
+            </a>
+            <a class="topna" href="./indexmascotas.html">
+                <img class="logo" src="./cliente/img/logo.png" alt="">
+            </a>
+        </div>
+    </nav>
+</div>
+    <div id="main">
+        <!-- Add all your websites page content here  -->
+
+        <div class="contenedor">
+            <div class="imagen actual">
+                <img src="./cliente/img/galeria1.jpg" />
+            </div>
+
+            <div class="imagen">
+                <img src="./cliente/img/galeria2.jpg" />
+            </div>
+
+            <div class="imagen">
+                <img src="./cliente/img/galeria3.jpg" />
+            </div>
+
+            <div class="imagen">
+                <img src="./cliente/img/galeria4.jpg" />
+            </div>
+
+
+
+            <a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+            <a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+
+            <div class="puntos">
+                <span class="punto activo" onclick="mostrar(0);"></span>
+                <span class="punto" onclick="mostrar(1);"></span>
+                <span class="punto" onclick="mostrar(2);"></span>
+                <span class="punto" onclick="mostrar(3);"></span>
+            </div>
+
+            <div class="boton">
+                <a href="#">
+                    <img src="http://www.reciclay.com.ve/gio/pause.png" id="btn" onclick="playpause();" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecera2">
+        <img src="./cliente/img/Domicilios.jpg" alt='gato' width="900" height="600">
+    </div>
+
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.55643986864!2d-75.4961167303799!3d6.2339433327843885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTQnMDIuMiJOIDc1wrAyOSc0My43Ilc!5e0!3m2!1ses!2sco!4v1693249048571!5m2!1ses!2sco"
+            width="1800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <footer class="pie">
+
+        <p>CONTACTANOS
+            <br>
+        Vía Vda. Mazo, Santa Elena, Medellín, Antioquia
+        <br>
+         3006183195</p>
+        
+
+
+    </footer>
+
+    <script src="./cliente/scrip/script.js"></script>
+</body>
+
+</html>
