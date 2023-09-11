@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #5dc08f;
+    background-color: #d4d2f3;
 }
 
 h1 {
@@ -83,7 +83,8 @@ img {
 }
 
 footer {
-            background-color: #74C362;
+            background-color: #5d8d5d
+            ;
             color: #faf8f8;
             padding: 15px;
             clear: both;
@@ -91,7 +92,8 @@ footer {
 
 .pie {
     clear: all;
-    background-color: green;
+    background-color: #5d8d5d
+    ;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -138,7 +140,9 @@ footer {
 }
 
 .navbar{
-    background-color: #baebd2;
+    background-color: #5d8d5d;    
+
+    height: 50%;
 }
 
 #cabecera2{
