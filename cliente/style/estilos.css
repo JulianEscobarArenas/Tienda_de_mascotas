@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-body {
-    text-align: center;
-    background-color: #d4d2f3;
-}
-=======
->>>>>>> 5f7a151a49661583e792d2d474dc87d7c88f8977
 
 *{
 margin: 0;
@@ -111,23 +104,8 @@ body {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-footer {
-            background-color: #5d8d5d
-            ;
-            color: #faf8f8;
-            padding: 15px;
-            clear: both;
-         }
-
-.pie {
-    clear: all;
-    background-color: #5d8d5d
-    ;
-=======
 
 .topnavD{
->>>>>>> 5f7a151a49661583e792d2d474dc87d7c88f8977
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -272,12 +250,6 @@ a svg{
     color: gray;
 }
 
-<<<<<<< HEAD
-.navbar{
-    background-color: #5d8d5d;    
-
-    height: 50%;
-=======
 .actual {
     visibility: visible;
     opacity: 1;
@@ -285,7 +257,6 @@ a svg{
 }
 .activo {
     background-color: gray;
->>>>>>> 5f7a151a49661583e792d2d474dc87d7c88f8977
 }
 
 footer {
@@ -308,8 +279,6 @@ footer {
     margin-bottom: 100px;
 }
 
-<<<<<<< HEAD
-=======
 .tituloproddes{
     border: solid 3px black;
     height: 100px;
@@ -318,4 +287,3 @@ footer {
     margin-top: 30px;
     margin-bottom: 40px;
 }
->>>>>>> 10de9f6a0a8a96ea62ed86df2f5c232a29a5cbd5
