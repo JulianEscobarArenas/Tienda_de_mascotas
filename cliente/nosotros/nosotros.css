@@ -62,10 +62,11 @@ div {
     width: 100%;
     overflow: hidden;
 }
-footer{
+
+footer {
     background-color: #74C362;
-    color: #000000;
-    padding: 15px;
+    color: #fcfbfb;
+    padding: 30px;
  }
 .pie{
     clear: all;
