@@ -78,6 +78,24 @@ body {
     margin-bottom: 70px;
 }
 
+.contig{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+        background-color: #ffffff;
+        border: solid 2px black;
+        margin-bottom: 100px;
+
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .columna {
     background: rgb(245, 10, 206);
@@ -292,4 +310,10 @@ footer {
     border: 8px solid ;
     margin-right: 70px ;
     margin-bottom: 70px;
+}
+
+.mapa{
+    background-color: #ffffff;
+    border: solid 2px black;
+    margin-bottom: 100px;
 }
