@@ -118,6 +118,24 @@ body {
     margin-bottom: 70px;
 }
 
+.contig{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+        background-color: #ffffff;
+        border: solid 2px black;
+        margin-bottom: 100px;
+
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .columna {
     background: rgb(245, 10, 206);
@@ -341,6 +359,19 @@ h1 {
     margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 .mapa {
     margin-left: 50px;
+=======
+.ig  iframe{
+    border: 8px solid ;
+    margin-right: 70px ;
+    margin-bottom: 70px;
+}
+
+.mapa{
+    background-color: #ffffff;
+    border: solid 2px black;
+    margin-bottom: 100px;
+>>>>>>> 371be3a8e7cfd14e9f5f048b3dd6bf0456dd4716
 }
