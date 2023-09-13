@@ -124,10 +124,13 @@ body {
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
+<<<<<<< HEAD
+=======
         background-color: #ffffff;
         border: solid 2px black;
         margin-bottom: 100px;
 
+>>>>>>> e2053858bc795955ec3cb8dc81ae874a104ade9f
 }
 
 .ig{
