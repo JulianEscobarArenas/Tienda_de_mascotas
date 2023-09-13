@@ -1,31 +1,69 @@
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+.texto2{
+    background-color: #00ad4e;
+    border-radius: 40%;
+    position: absolute;
+    width: 75%;
+    left: 250px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid #027937;
 }
 
-#cabecera2{
+
+.tituloprincipal {
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 8%;
+}
+
+
+.tituloprincipal2 {
+    color: #000000;
     display: flex;
     justify-content: center;
-   
+    text-decoration: underline rgb(0, 0, 0);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecera2 {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*
 
 * The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgb(0, 0, 0);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    ;
 }
- 
+
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -35,12 +73,13 @@ box-sizing: border-box;
     display: block;
     transition: 0.3s
 }
- 
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
- 
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
@@ -49,32 +88,33 @@ box-sizing: border-box;
     font-size: 36px;
     margin-left: 50px;
 }
- 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
- 
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(0, 0, 0,0.5); /* Black*/
+    background-color: #007A36;
+    /* Black*/
     overflow: hidden;
 }
- 
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
-   
+
     color: #f2f2f2;
 }
 
 
-.ig  iframe{
-    border: 8px solid ;
-    margin-right: 70px ;
+.ig iframe {
+    border: 8px solid;
+    margin-right: 70px;
     margin-bottom: 70px;
 }
 
@@ -97,7 +137,7 @@ body {
 
 .topna {
     float: left;
-    
+
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -105,11 +145,12 @@ body {
 }
 
 
-.topnavD{
+.topnavD {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border: solid 3px black;
 }
 
 .logo {
@@ -117,63 +158,69 @@ body {
     border-radius: 100%;
     border: solid 2px black;
 }
- 
+
 /* Change the color of links on hover */
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
- 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
- 
-a svg{
-  transition:all .5s ease;
- 
-  &:hover{
-    #transform:rotate(180deg);
-  }
-}
- 
-#ico{
-  display: none;
-}
- 
-.menu{
-  background: #000;
-  display: none;
-  padding: 5px;
-  width: 320px;
-  @include border-radius(5px);
- 
-  #transition: all 0.5s ease;
+    .sidenav {
+        padding-top: 15px;
+    }
 
-  a{
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px 2px;
-    margin: 3px 0;
-    text-decoration: none;
-    background: #444;
- 
-    &:nth-child(1){
-      margin-top: 0;
-      @include border-radius(3px 3px 0 0 );
+    .sidenav a {
+        font-size: 18px;
     }
-    &:nth-child(5){
-      margin-bottom: 0;
-      @include border-radius(0 0 3px 3px);
+}
+
+a svg {
+    transition: all .5s ease;
+
+    &:hover {
+        #transform: rotate(180deg);
     }
- 
-    &:hover{
-      background: #555;
+}
+
+#ico {
+    display: none;
+}
+
+.menu {
+    background: #000;
+    display: none;
+    padding: 5px;
+    width: 320px;
+    @include border-radius(5px);
+
+    #transition: all 0.5s ease;
+
+    a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 10px 2px;
+        margin: 3px 0;
+        text-decoration: none;
+        background: #444;
+
+        &:nth-child(1) {
+            margin-top: 0;
+            @include border-radius(3px 3px 0 0);
+        }
+
+        &:nth-child(5) {
+            margin-bottom: 0;
+            @include border-radius(0 0 3px 3px);
+        }
+
+        &:hover {
+            background: #555;
+        }
     }
-  }
 }
 
 .contenedor {
@@ -182,7 +229,7 @@ a svg{
     height: 50vh;
     background-color: black;
     border-radius: 15px;
-    margin: 3% auto;    
+    margin: 3% auto;
     z-index: -1;
 }
 
@@ -200,6 +247,7 @@ a svg{
     left: 50%;
     transform: translateX(-50%);
 }
+
 .texto {
     position: absolute;
     width: 100%;
@@ -209,12 +257,12 @@ a svg{
     font-weight: bold;
 }
 
-.contenedor a{
+.contenedor a {
     position: absolute;
     text-decoration: none;
     color: white;
     font-size: 36px;
-    top : 50%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -234,6 +282,7 @@ a svg{
     width: 100%;
     text-align: center;
 }
+
 .punto {
     display: inline-block;
     width: 16px;
@@ -242,10 +291,12 @@ a svg{
     border-radius: 50%;
     margin-right: 5px;
 }
+
 .punto:hover {
     cursor: pointer;
     background-color: gray;
 }
+
 .contenedor a:hover {
     color: gray;
 }
@@ -255,35 +306,41 @@ a svg{
     opacity: 1;
     transition: visibility 1s, opacity 1s;
 }
+
 .activo {
     background-color: gray;
 }
 
 footer {
-    background-color: #74C362;
+    background-color: #007A36;
     color: #fcfbfb;
     padding: 30px;
     text-align: center;
- }
+    border-top: solid 3px black;
+}
 
- h1 {
+h1 {
     font-size: 40px;
     font-family: sans-serif;
     font-weight: bold;
 }
 
 
-.productosdestacados{
+.productosdestacados {
     background-color: #ffffff;
     border: solid 2px black;
     margin-bottom: 100px;
 }
 
-.tituloproddes{
+.tituloproddes {
     border: solid 3px black;
     height: 100px;
     color: #faf8f8;
-    background-color: gray;
+    background-color: #007A36;
     margin-top: 30px;
     margin-bottom: 40px;
+}
+
+.mapa {
+    margin-left: 50px;
 }

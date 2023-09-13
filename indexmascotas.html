@@ -2,240 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./cliente/style/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./cliente/style/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-   <div id="menu">
+  <div id="menu">
     <div id="sideNavigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
-        <a href="./cliente/formulario/iniciar sesion.html">INICIAR SESION</a>
-        <a href="./cliente/nosotros/nosotros.html">NOSOTROS</a>
-        <a href="./cliente/formulario/registrate.html">Perros</a>
-        <a href="./cliente/formulario/registrate.html">Gatos</a>
-        <a href="./cliente/formulario/registrate.html">Varios</a>
-    
-    </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./cliente/formulario/iniciar sesion.html">INICIAR SESION</a>
+      <a href="./cliente/nosotros/nosotros.html">NOSOTROS</a>
+      <a href="./cliente/formulario/registrate.html">Perros</a>
+      <a href="./cliente/formulario/registrate.html">Gatos</a>
+      <a href="./cliente/formulario/registrate.html">Varios</a>
 
+    </div>
     <nav>
-        <div class="topnav topnavD">
-            <a href="#" onclick="openNav()" class="hover">
-                <svg width="30" height="30" id="icoOpen">
-                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                    <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                    <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-                </svg>
-            </a>
-            <a class="topna" href="./indexmascotas.html">
-                <img class="logo" src="./cliente/img/logo.png" alt="">
-            </a>
+      <div class="topnav topnavD">
+        <a href="#" onclick="openNav()" class="hover">
+          <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+          </svg>
+        </a>
+        <div class="tituloprincipal">
+          <h1>Bienvenidos a tienda de mascotas</h1><br>
+          <h1 class="tituloprincipal2">El mirador</h1>
         </div>
-    </nav>
-</div>
-    <div id="main">
-        <!-- Add all your websites page content here  -->
+        <a class="topna" href="./indexmascotas.html">
+          <img class="logo" src="./cliente/img/logo.png" alt="">
+        </a>
+      </div>
+    </nav><br><br>
+    <h3 class="texto2">En esta tienda, podras conseguir los mejores productos para tus mascotas <br> ¡¡Y A LOS MEJORES PRECIOS!! </h3>
 
-        <div class="contenedor">
-            <div class="imagen actual">
-                <img src="./cliente/img/galeria1.jpg" />
-            </div>
+  </div>
+  <div id="main">
+    <!-- Add all your websites page content here  -->
+    <br><br>
 
-            <div class="imagen">
-                <img src="./cliente/img/galeria2.jpg" />
-            </div>
 
-            <div class="imagen">
-                <img src="./cliente/img/galeria3.jpg" />
-            </div>
+    <div class="contenedor">
+      <div class="imagen actual">
+        <img src="./cliente/img/galeria1.jpg" />
+      </div>
 
-            <div class="imagen">
-                <img src="./cliente/img/galeria4.jpg" />
-            </div>
+      <div class="imagen">
+        <img src="./cliente/img/galeria2.jpg" />
+      </div>
 
-            <div class="imagen">
-                <img src="./cliente/img/galeria5.PNG" />
-            </div>
+      <div class="imagen">
+        <img src="./cliente/img/galeria3.jpg" />
+      </div>
 
-        </div>
+      <div class="imagen">
+        <img src="./cliente/img/galeria4.jpg" />
+      </div>
+
+      <div class="imagen">
+        <img src="./cliente/img/galeria5.PNG" />
+      </div>
+
     </div>
+  </div>
 
-    <div class="destacados">
-        <h1 class="tituloproddes">Productos destacados</h1>
-        <div class="productosdestacados">
-          <div class="row mb-2">
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre del producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="card-text mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Ver producto
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
+  <div class="destacados">
+    <h1 class="tituloproddes">Productos destacados</h1>
+    <div class="productosdestacados">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre del producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="card-text mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Ver producto
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Ver producto
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="card-text mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Ver producto
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="card-text mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Continue reading
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="card-text mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Ver producto
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <h3 class="mb-0">nombre producto</h3>
-                  <div class="mb-1 text-body-secondary">precio del producto</div>
-                  <p class="card-text mb-auto">Descripcion del producto</p>
-                  <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Ver producto
-                    <svg class="bi">
-                      <use xlink:href="#chevron-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Thumbnail</text>
-                  </svg>
-                </div>
-              </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
             </div>
           </div>
-    
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Ver producto
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="card-text mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Ver producto
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="card-text mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="card-text mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Ver producto
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">nombre producto</h3>
+              <div class="mb-1 text-body-secondary">precio del producto</div>
+              <p class="card-text mb-auto">Descripcion del producto</p>
+              <a href="./cliente/formulario/registrate.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                Ver producto
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
 
-    <div id="cabecera2">
-        <img src="./cliente/img/Domicilios.jpg" alt='gato' width="900" height="600">
-    </div><br><br><br>
+    </div>
+  </div>
 
-    <div class="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.55643986864!2d-75.4961167303799!3d6.2339433327843885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTQnMDIuMiJOIDc1wrAyOSc0My43Ilc!5e0!3m2!1ses!2sco!4v1693249048571!5m2!1ses!2sco"
-            width="1800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><br><br><br>
-    
-    <footer class="pie">
+  <div id="cabecera2">
+    <img src="./cliente/img/Domicilios.jpg" alt='gato' width="900" height="600">
+  </div><br><br><br>
 
-        <p><h1>CONTACTANOS</h1>
-            <br>
-        Vía Vda. Mazo, Santa Elena, Medellín, Antioquia
-        <br>
-         3006183195</p>
-        
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.55643986864!2d-75.4961167303799!3d6.2339433327843885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTQnMDIuMiJOIDc1wrAyOSc0My43Ilc!5e0!3m2!1ses!2sco!4v1693249048571!5m2!1ses!2sco"
+      width="1800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div><br><br><br>
+
+  <footer class="pie">
+
+    <p>
+    <h1>CONTACTANOS</h1>
+    <br>
+    Vía Vda. Mazo, Santa Elena, Medellín, Antioquia
+    <br>
+    3006183195</p>
 
 
-    </footer>
 
-    <script src="./cliente/scrip/script.js"></script>
+  </footer>
+
+  <script src="./cliente/scrip/script.js"></script>
 </body>
 
 </html>
