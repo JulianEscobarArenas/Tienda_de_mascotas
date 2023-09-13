@@ -78,6 +78,20 @@ body {
     margin-bottom: 70px;
 }
 
+.contig{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .columna {
     background: rgb(245, 10, 206);
