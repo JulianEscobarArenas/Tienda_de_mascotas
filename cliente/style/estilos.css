@@ -81,7 +81,7 @@
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn {||
     position: absolute;
     top: 0;
     right: 25px;
@@ -426,12 +426,14 @@ body {
     border-radius: 1px;
     font-size: 0.9em;
     transition: all 0.2s ease 0s;
+    
 }
 
 .card .back a:hover {
     background: #fff;
     color: #333;
     text-shadow: 0 0 1px #ff0c0c;
+    height: 502px;
 }
 
 .cardBox:nth-child(1) .card .back {
@@ -452,6 +454,7 @@ body {
 
 .cardBox:nth-child(5) .card .back {
     background: rgb(71, 129, 255);
+   
 }
 
 .cardBox:nth-child(6) .card .back {
