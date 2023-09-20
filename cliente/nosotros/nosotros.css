@@ -14,7 +14,7 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #5dc08f
+background-color: #2424240f
 ;
 }
 
@@ -45,11 +45,16 @@ padding: 1rem;
 .about-image {
 flex: 1;
 text-align: center;
+border: 11px solid #00a74b;
+border-radius: 20%;
+
+
 }
 
 .about-image img {
 max-width: 100%;
 height: auto;
+border: 500px red;
 }
 
 h1 {

@@ -1,6 +1,6 @@
 .texto2{
     background-color: #00ad4e;
-    border-radius: 40%;
+    border-radius: 50%;
     position: absolute;
     width: 75%;
     left: 250px;
@@ -99,7 +99,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #007A36;
+    background-color: #00721e;
     /* Black*/
     overflow: hidden;
 }
@@ -124,13 +124,21 @@ body {
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
-<<<<<<< HEAD
-=======
-        background-color: #ffffff;
-        border: solid 2px black;
-        margin-bottom: 100px;
+}
 
->>>>>>> e2053858bc795955ec3cb8dc81ae874a104ade9f
+.tituloig {
+    border: solid 3px black;
+    height: 100px;
+    color: #faf8f8;
+    background-color: #00a74b;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center; 
+    text-shadow: 3px  3px 5px #00721e,
+    1px  0px 0px rgb(0, 0, 0),
+    0px  1px 0px rgb(0, 0, 0),
+    0px  0px 10px rgb(0, 0, 0);
+
 }
 
 .ig{
@@ -183,7 +191,7 @@ body {
 /* Change the color of links on hover */
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #af4c4c;
     color: white;
 }
 
@@ -333,7 +341,7 @@ a svg {
 }
 
 footer {
-    background-color: #007A36;
+    background-color: #00721e;
     color: #fcfbfb;
     padding: 30px;
     text-align: center;
@@ -357,9 +365,14 @@ h1 {
     border: solid 3px black;
     height: 100px;
     color: #faf8f8;
-    background-color: #007A36;
+    background-color: #00a74b;
     margin-top: 30px;
     margin-bottom: 40px;
+    text-align: center; 
+    text-shadow: 3px  3px 5px #00721e,
+    1px  0px 0px rgb(0, 0, 0),
+    0px  1px 0px rgb(0, 0, 0),
+    0px  0px 10px rgb(0, 0, 0);
 }
 
 .mapa {
