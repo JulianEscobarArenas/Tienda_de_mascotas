@@ -1,24 +1,32 @@
 .texto2{
-    background-color: #00ad4e;
-    border-radius: 50%;
     position: absolute;
     width: 75%;
     left: 250px;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: 2px solid #027937;
+    color: rgb(0, 0, 0);
+    font-family: 'Shadows Into Light', cursive;
 }
 
-
-.tituloprincipal {
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.padre{
+    margin-top: 0;
+    display: flex;
     justify-content: center;
-    border: 3px solid black;
-    border-radius: 8%;
+    width: 100%;
+    position: relative;
+    
+}
+
+.imagentitulo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;  
+    top: 0;
+    left: 36%;
+   width: 500px;
+   justify-content: center;   
+  
+   position: absolute;
 }
 
 
@@ -94,6 +102,7 @@
 
 body {
     overflow-x: hidden;
+    background-image: url("https://i.pinimg.com/564x/88/10/89/88108942071aaa2908e925e1476d6204.jpg");
 }
 
 
@@ -128,16 +137,22 @@ body {
 
 .tituloig {
     border: solid 3px black;
+    width: 1400px;
     height: 100px;
+    display: flex;
+    justify-content: center;
     color: #faf8f8;
     background-color: #00a74b;
     margin-top: 30px;
+    margin-left: 250px;
     margin-bottom: 40px;
     text-align: center; 
+    align-items: center;
     text-shadow: 3px  3px 5px #00721e,
     1px  0px 0px rgb(0, 0, 0),
     0px  1px 0px rgb(0, 0, 0),
     0px  0px 10px rgb(0, 0, 0);
+
 
 }
 
@@ -179,7 +194,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: solid 3px black;
+    border-bottom: #000 solid 3px;
 }
 
 .logo {
@@ -345,34 +360,223 @@ footer {
     color: #fcfbfb;
     padding: 30px;
     text-align: center;
-    border-top: solid 3px black;
 }
 
-h1 {
-    font-size: 40px;
-    font-family: sans-serif;
-    font-weight: bold;
+body {
+    color: #333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+    height: 100vh;
+    width: 100vw;
 }
 
 
-.productosdestacados {
-    background-color: #ffffff;
-    border: solid 2px black;
-    margin-bottom: 100px;
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
 }
+
+
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    background: #222;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.card p {
+    margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+
+.card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+    
+}
+
+.card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #ff0c0c;
+    height: 502px;
+}
+
+.cardBox:nth-child(1) .card .back {
+    background: cornflowerblue;
+    height: 350px;
+}
+
+.cardBox:nth-child(2) .card .back {
+    background: orange;
+    height: 350px;
+}
+
+.cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+    height: 350px;
+}
+
+.cardBox:nth-child(4) .card .back {
+    background: tomato;
+    height: 350px;
+}
+
+.cardBox:nth-child(5) .card .back {
+    background: rgb(71, 129, 255);
+    height: 350px;
+}
+
+.cardBox:nth-child(6) .card .back {
+    background: rgb(203, 71, 255);
+    height: 350px;
+}
+.cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+}
+
+
+.cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cardBox {
+        margin-left: 2.8%;
+        margin-top: 3%;
+        width: 46%;
+    }
+
+    .card {
+        height: 285px;
+    }
+
+    .cardBox:last-child {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardBox {
+        width: 94.5%;
+    }
+
+    .card {
+        height: 260px;
+    }
+}
+
+.boxesContainer img{
+    width: 320px;
+    height: 290px;
+}
+
+
+.boxesContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+     
+ }
 
 .tituloproddes {
     border: solid 3px black;
+    width: 1400px;
     height: 100px;
+    display: flex;
+    justify-content: center;
     color: #faf8f8;
     background-color: #00a74b;
     margin-top: 30px;
+    margin-left: 250px;
     margin-bottom: 40px;
     text-align: center; 
+    align-items: center;
     text-shadow: 3px  3px 5px #00721e,
     1px  0px 0px rgb(0, 0, 0),
     0px  1px 0px rgb(0, 0, 0),
     0px  0px 10px rgb(0, 0, 0);
+
 }
 
 .mapa {
