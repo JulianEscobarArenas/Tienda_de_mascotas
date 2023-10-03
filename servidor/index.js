@@ -18,7 +18,7 @@ const db = mysql.createConnection({
 })
 
 app.get('/', (req, res)=>{
-    db.query('select * from cliente',
+    db.query('select * from productos WHERE categoria = "Perros"',
     (err,result)=>{
         if(err)console.log(err)
         else{
@@ -30,36 +30,38 @@ app.get('/', (req, res)=>{
 
 app.post('/crear', (req,res)=>{
     const ID = req.body.ID;
-    const nombre = req.body.nombre;
-    const  Primer_Apellido = req.body.Primer_Apellido;
-    const Telefono =req.body.Telefono;
-    const Nombre_Mascota =req.body.Nombre_Mascota;
-    const Direccion =req.body.Direccion;
+    const Cantidad = req.body.Cantidad;
+    const  Precio = req.body.Precio;
+    const imagen =req.body.imagen;
+    const Nombre =req.body.Nombre;
+    const Marca =req.body.Marca;
+    const Categoria =req.body.Categoria
     
-    db.query('INSERT INTO cliente VALUES (?,?,?,?,?,? )',[ID, nombre, Primer_Apellido, Telefono,Nombre_Mascota,Direccion]),
+    db.query('INSERT INTO productos VALUES (?,?,?,?,?,?,? )',[ID, Cantidad, Precio, imagen,Nombre,Marca,Categoria]),
     (err, result)=>{
         if(err)console.log(err)
         else{
-            res.send("El cliente se registro")
-            console.log("El cliente se registro", result)
+            res.send("El producto se a registro")
+            console.log("El producto se a registro", result)
         }
     }
 })
 
 app.put('/edit',(req,res)=>{
     const ID = req.body.ID;
-    const nombre = req.body.nombre;
-    const  Primer_Apellido = req.body.Primer_Apellido;
-    const Telefono =req.body.Telefono;
-    const Nombre_Mascota =req.body.Nombre_Mascota;
-    const Direccion =req.body.Direccion;
+    const Cantidad = req.body.Cantidad;
+    const  Precio = req.body.Precio;
+    const imagen =req.body.imagen;
+    const Nombre =req.body.Nombre;
+    const Marca =req.body.Marca;
+    const Categoria =req.body.Categoria
 
-    db.query('UPDATE cliente SET Nombre=?,Primer_Apellido=?,Telefono=?,Nombre_Mascota=?,Direccion=? WHERE ID=?',[nombre, Primer_Apellido, Telefono,Nombre_Mascota,Direccion,ID]),
+    db.query('UPDATE productos SET Cantidad=?,Precio=?,imagen=?,Nombre=?,Marca=?,Categoria=? WHERE ID=?',[ID, Cantidad, Precio, imagen,Nombre,Marca,Categoria]),
     (err, result)=>{
         if(err)console.log(err)
         else{
-            res.send("El cliente se actualizo",result)
-            console.log("El cliente se actualizo", result)
+            res.send("El producto se a actualizo",result)
+            console.log("El producto se a actualizo", result)
         }
     }
 })
@@ -67,12 +69,12 @@ app.put('/edit',(req,res)=>{
 app.delete('/delete/:ID',(req,res)=>{
     const ID = req.body.ID;
 
-    db.query('DELETE FROM cliente WHERE ID=?',ID),
+    db.query('DELETE FROM productos WHERE ID=?',ID),
     (err, result)=>{
         if(err)console.log(err)
         else{
             res.send("Eliminar",result)
-            console.log("El cliente a sido elimino", result)
+            console.log("El producto se a sido elimino", result)
         }
     }
 })
