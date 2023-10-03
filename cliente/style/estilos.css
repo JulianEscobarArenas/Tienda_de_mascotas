@@ -10,15 +10,26 @@
     border: 2px solid #027937;
 }
 
-
-.tituloprincipal {
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.padre{
+    margin-top: 0;
+    display: flex;
     justify-content: center;
-    border: 3px solid black;
-    border-radius: 8%;
+    width: 100%;
+    position: relative;
+    
+}
+
+.imagentitulo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;  
+    top: 0;
+    left: 36%;
+   width: 500px;
+   justify-content: center;   
+  
+   position: absolute;
 }
 
 
@@ -128,16 +139,22 @@ body {
 
 .tituloig {
     border: solid 3px black;
+    width: 1400px;
     height: 100px;
+    display: flex;
+    justify-content: center;
     color: #faf8f8;
     background-color: #00a74b;
     margin-top: 30px;
+    margin-left: 250px;
     margin-bottom: 40px;
     text-align: center; 
+    align-items: center;
     text-shadow: 3px  3px 5px #00721e,
     1px  0px 0px rgb(0, 0, 0),
     0px  1px 0px rgb(0, 0, 0),
     0px  0px 10px rgb(0, 0, 0);
+
 
 }
 
@@ -179,7 +196,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: solid 3px black;
+    border-bottom: #000 solid 3px;
 }
 
 .logo {
@@ -363,16 +380,22 @@ h1 {
 
 .tituloproddes {
     border: solid 3px black;
+    width: 1400px;
     height: 100px;
+    display: flex;
+    justify-content: center;
     color: #faf8f8;
     background-color: #00a74b;
     margin-top: 30px;
+    margin-left: 250px;
     margin-bottom: 40px;
     text-align: center; 
+    align-items: center;
     text-shadow: 3px  3px 5px #00721e,
     1px  0px 0px rgb(0, 0, 0),
     0px  1px 0px rgb(0, 0, 0),
     0px  0px 10px rgb(0, 0, 0);
+
 }
 
 .mapa {
