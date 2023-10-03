@@ -126,7 +126,7 @@ input{
 }
 
 footer {
-    background-color: #74C362;
+    background-color: #007A36;
     color: #fcfbfb;
     padding: 30px;
  }
@@ -136,6 +136,20 @@ h1 {
     font-size: 40px;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+.encuestasa {
+    height: 80px;
+    width: 500px ;
+    margin-left: 700px;
+    color: #faf8f8;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center; 
+    text-shadow: 3px  3px 5px #000000,
+    1px  0px 0px rgb(0, 0, 0),
+    0px  1px 0px rgb(0, 0, 0),
+    0px  0px 10px rgb(0, 0, 0);
 }
 
 

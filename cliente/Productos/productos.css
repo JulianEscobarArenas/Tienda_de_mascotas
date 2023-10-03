@@ -18,13 +18,6 @@ body {
     
 }
 
-.container {
-    width: 400px;
-    margin: 40px auto;
-}
-
-
-
 footer {
     background-color: #007A36;
     color: #fcfbfb;
@@ -39,51 +32,7 @@ h1 {
 }
 
 
-/* barra de navegacion*/
 
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
- 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
- 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
- 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
- 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-
-body {
-  overflow-x: hidden;
-}
  
 /* Add a black background color to the top navigation */
 .topnav {
@@ -190,35 +139,20 @@ a svg{
     margin: 1% 0 0 1%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    width: 350px;
-    height: 310px;
+    width: 370px;
+    height: 375px;
     padding: 20px;
 }
 
-.imagen {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.imagen img {
-    height: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .cardBox:hover .card {
     transform: rotateY(180deg);
-   
 }
 
 .card {
-    background: #222;
+  
     cursor: default;
-    height: 300px;
+    height: 380px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
     width: 100%;
@@ -238,6 +172,7 @@ a svg{
     display: block;
     font-size: 1.2em;
     height: 100%;
+    padding: 0.8em;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -264,21 +199,54 @@ a svg{
     border-radius: 1px;
     font-size: 0.9em;
     transition: all 0.2s ease 0s;
+    
 }
 
 .card .back a:hover {
     background: #fff;
     color: #333;
     text-shadow: 0 0 1px #ff0c0c;
+    height: 502px;
 }
 
 .cardBox:nth-child(1) .card .back {
     background: cornflowerblue;
 }
 
-.cardBox:nth-child(1) .card {
+.cardBox:nth-child(2) .card .back {
+    background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+    background: tomato;
+}
+
+.cardBox:nth-child(5) .card .back {
+    background: rgb(71, 129, 255);
+   
+}
+
+.cardBox:nth-child(6) .card .back {
+    background: rgb(203, 71, 255);
+}
+.cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+}
+
+
+.cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
 }
 
 @-webkit-keyframes giro {
@@ -345,16 +313,15 @@ a svg{
  }
 
 .tituloproddes {
-    border: solid 3px black;
-    height: 100px;
+    height: 30px;
+    width: 500px ;
+    margin-left: 700px;
     color: #faf8f8;
-    background-color: #00a74b;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 40px;
     text-align: center; 
-    text-shadow: 3px  3px 5px #00721e,
+    text-shadow: 3px  3px 5px #000000,
     1px  0px 0px rgb(0, 0, 0),
     0px  1px 0px rgb(0, 0, 0),
     0px  0px 10px rgb(0, 0, 0);
 }
-

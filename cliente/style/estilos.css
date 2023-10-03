@@ -1,15 +1,11 @@
 .texto2{
-    background-color: #00ad4e;
-    border-radius: 50%;
     position: absolute;
     width: 75%;
     left: 250px;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: 2px solid #027937;
+    color: rgb(0, 0, 0);
+    font-family: 'Shadows Into Light', cursive;
 }
-
 
 .tituloprincipal {
     background-color: #ffffff;
@@ -81,7 +77,7 @@
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {||
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -94,6 +90,7 @@
 
 body {
     overflow-x: hidden;
+    background-image: url("https://i.pinimg.com/564x/88/10/89/88108942071aaa2908e925e1476d6204.jpg");
 }
 
 
@@ -127,8 +124,9 @@ body {
 }
 
 .tituloig {
-    border: solid 3px black;
-    height: 100px;
+    height: 80px;
+    width: 500px;
+    margin-left: 700px;
     color: #faf8f8;
     background-color: #00a74b;
     margin-top: 30px;
@@ -179,7 +177,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: solid 3px black;
 }
 
 .logo {
@@ -345,7 +342,6 @@ footer {
     color: #fcfbfb;
     padding: 30px;
     text-align: center;
-    border-top: solid 3px black;
 }
 
 body {
@@ -367,7 +363,7 @@ body {
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 350px;
-    height: 310px;
+    height: 350px;
     padding: 20px;
 }
 
@@ -403,6 +399,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
+
 }
 
 .card .front strong {
@@ -438,27 +435,32 @@ body {
 
 .cardBox:nth-child(1) .card .back {
     background: cornflowerblue;
+    height: 350px;
 }
 
 .cardBox:nth-child(2) .card .back {
     background: orange;
+    height: 350px;
 }
 
 .cardBox:nth-child(3) .card .back {
     background: yellowgreen;
+    height: 350px;
 }
 
 .cardBox:nth-child(4) .card .back {
     background: tomato;
+    height: 350px;
 }
 
 .cardBox:nth-child(5) .card .back {
     background: rgb(71, 129, 255);
-   
+    height: 350px;
 }
 
 .cardBox:nth-child(6) .card .back {
     background: rgb(203, 71, 255);
+    height: 350px;
 }
 .cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
@@ -540,11 +542,13 @@ body {
  }
 
 .tituloproddes {
-    border: solid 3px black;
-    height: 100px;
+    border: solid 3px #00a74b;
+    height: 80px;
+    width: 500px ;
+    margin-left: 700px;
     color: #faf8f8;
     background-color: #00a74b;
-    margin-top: 30px;
+    margin-top: 200px;
     margin-bottom: 40px;
     text-align: center; 
     text-shadow: 3px  3px 5px #00721e,
