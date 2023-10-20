@@ -105,9 +105,10 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav img {
     float: right;
-
+    background-color: none
+    ;
     color: #f2f2f2;
 }
 
@@ -552,22 +553,17 @@ body {
  }
 
 .tituloproddes {
-    border: solid 3px black;
+
     width: 1400px;
     height: 100px;
     display: flex;
     justify-content: center;
     color: #faf8f8;
-    background-color: #00a74b;
     margin-top: 30px;
     margin-left: 250px;
     margin-bottom: 40px;
     text-align: center; 
     align-items: center;
-    text-shadow: 3px  3px 5px #00721e,
-    1px  0px 0px rgb(0, 0, 0),
-    0px  1px 0px rgb(0, 0, 0),
-    0px  0px 10px rgb(0, 0, 0);
 
 }
 
