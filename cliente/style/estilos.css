@@ -97,15 +97,6 @@
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-
-body {
-    overflow-x: hidden;
-    background-image: url("https://i.pinimg.com/564x/88/10/89/88108942071aaa2908e925e1476d6204.jpg");
-}
-
-
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #00721e;
@@ -360,6 +351,7 @@ footer {
     color: #fcfbfb;
     padding: 30px;
     text-align: center;
+    border-top: black solid 3px;
 }
 
 body {

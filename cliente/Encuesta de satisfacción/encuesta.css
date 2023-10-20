@@ -11,15 +11,16 @@
 body {
     background: #2424240f;
     font-family: 'Slabo 27px', serif;
-    margin-bottom: 30px;
     text-align: center;
     font-size: 18px;
     text-align: center;
+    background: url(../img/image.png) repeat 0 0 ;
     
 }
 .topnav {
     background-color:#007A36; /* Black*/
     overflow: hidden;
+    border-bottom: black solid 3px;
 }
  
 /* Style the links inside the navigation bar */
@@ -129,6 +130,7 @@ footer {
     background-color: #007A36;
     color: #fcfbfb;
     padding: 30px;
+    border-top: black solid 3px;
  }
 
 

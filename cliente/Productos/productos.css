@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
 /*https://getbootstrap.com/*/
 * {
     margin: 0;
@@ -9,24 +11,27 @@
 }
 
 body {
-    background: #2424240f;
+    background: #3997020e;
     font-family: 'Slabo 27px', serif;
-    margin-bottom: 30px;
     text-align: center;
     font-size: 18px;
     text-align: center;
-    
+    background: url(../img/image.png) repeat 0 0 ;
 }
 
 footer {
+    margin-top: 100px;
     background-color: #007A36;
     color: #fcfbfb;
     padding: 30px;
+    height: 240px;
+    border-top: 3px solid black;
  }
 
 
 h1 {
-    font-size: 40px;
+    color: #000000d2;
+    font-size: 50px;
     font-family: sans-serif;
     font-weight: bold;
 }
@@ -36,14 +41,14 @@ h1 {
  
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color:#007A36; /* Black*/
+    background-color:#00721e; /* Black*/
     overflow: hidden;
+    border-bottom: 3px solid black;
 }
  
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
-   
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -53,7 +58,6 @@ h1 {
 
 .topna {
     float: left;
-    
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -132,196 +136,359 @@ a svg{
   }
 }
 
-/*tarjetas*/
-.cardBox {
-    float: left;
-    font-size: 1.2em;
-    margin: 1% 0 0 1%;
-    perspective: 800px;
-    transition: all 0.3s ease 0s;
-    width: 370px;
-    height: 375px;
-    padding: 20px;
+
+/*---------------------------------------------------------*/
+
+body::before,
+body::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body * {
+    box-sizing: inherit;
+}
+
+p,
+h1 {
+    padding: 0;
+    margin: 40px;
+}
+
+body,
+.text-light-black {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.text-black {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.text-muted {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
-.cardBox:hover .card {
-    transform: rotateY(180deg);
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
-.card {
-  
-    cursor: default;
-    height: 380px;
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease 0s;
+.ff-serif {
+    font-family: 'Lora', serif;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.lts-1px {
+    letter-spacing: 1px;
+}
+
+.lts-2px {
+    letter-spacing: 2px;
+}
+
+
+.w-full {
     width: 100%;
-    -webkit-animation: giro 1s 1;
-    animation: giro 1s 1;
 }
 
-.card p {
-    margin-bottom: 1.8em;
-}
-
-.card .front,
-.card .back {
-    backface-visibility: hidden;
-    box-sizing: border-box;
-    color: white;
-    display: block;
-    font-size: 1.2em;
-    height: 100%;
-    padding: 0.8em;
-    position: absolute;
+.text-center {
     text-align: center;
-    width: 100%;
 }
 
-.card .front strong {
-    background: #fff;
-    border-radius: 100%;
-    color: #222;
-    font-size: 1.5em;
-    line-height: 30px;
-    padding: 0 7px 4px 6px;
+.text-left {
+    text-align: left;
 }
 
-.card .back {
-    transform: rotateY(180deg);
+.text-right {
+    text-align: right;
 }
 
-.card .back a {
-    padding: 0.3em 0.5em;
-    background: #333;
-    color: #fff;
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute
+}
+
+
+
+.bg-white {
+    background-color: #fff;
+}
+
+
+
+
+
+
+.small {
+    font-size: 0.75rem;
+}
+
+.card{
+    margin: 10px;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    margin: 5px auto;
+}
+
+.card-heading {
+    font-size: 2.25rem;
+}
+
+.styled-link {
     text-decoration: none;
-    border-radius: 1px;
-    font-size: 0.9em;
-    transition: all 0.2s ease 0s;
-    
+    outline: none;
+    color: #2196fe;
+    transition: all 0.25s ease-in;
 }
 
-.card .back a:hover {
-    background: #fff;
-    color: #333;
-    text-shadow: 0 0 1px #ff0c0c;
-    height: 502px;
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+    color: #536dfe;
 }
 
-.cardBox:nth-child(1) .card .back {
-    background: cornflowerblue;
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
-.cardBox:nth-child(2) .card .back {
-    background: orange;
+.blue-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
 }
 
-.cardBox:nth-child(3) .card .back {
-    background: yellowgreen;
-}
-
-.cardBox:nth-child(4) .card .back {
-    background: tomato;
-}
-
-.cardBox:nth-child(5) .card .back {
-    background: rgb(71, 129, 255);
-   
-}
-
-.cardBox:nth-child(6) .card .back {
-    background: rgb(203, 71, 255);
-}
-.cardBox:nth-child(2) .card {
-    -webkit-animation: giro 1.5s 1;
-    animation: giro 1.5s 1;
-}
-
-.cardBox:nth-child(3) .card {
-    -webkit-animation: giro 2s 1;
-    animation: giro 2s 1;
+.blue-hover:hover {
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #2196fe;
 }
 
 
-.cardBox:nth-child(4) .card {
-    -webkit-animation: giro 2.5s 1;
-    animation: giro 2.5s 1;
+
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-@-webkit-keyframes giro {
-    from {
-        transform: rotateY(180deg);
-    }
-
-    to {
-        transform: rotateY(0deg);
-    }
+.float-left {
+    float: left;
 }
 
-@keyframes giro {
-    from {
-        transform: rotateY(180deg);
-    }
-
-    to {
-        transform: rotateY(0deg);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .cardBox {
-        margin-left: 2.8%;
-        margin-top: 3%;
-        width: 46%;
-    }
-
-    .card {
-        height: 285px;
-    }
-
-    .cardBox:last-child {
-        margin-bottom: 3%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .cardBox {
-        width: 94.5%;
-    }
-
-    .card {
-        height: 260px;
-    }
-}
-
-.boxesContainer img{
-    width: 320px;
-    height: 290px;
+.float-right {
+    float: right;
 }
 
 
-.boxesContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        justify-items: center;
-        align-items: center;
-     
- }
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-.tituloproddes {
-    height: 30px;
-    width: 500px ;
-    margin-left: 700px;
-    color: #faf8f8;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    text-align: center; 
-    text-shadow: 3px  3px 5px #000000,
-    1px  0px 0px rgb(0, 0, 0),
-    0px  1px 0px rgb(0, 0, 0),
-    0px  0px 10px rgb(0, 0, 0);
+
+
+/**Margin and padding utilities*/
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.mx-3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+
+
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
 }

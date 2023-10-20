@@ -28,6 +28,28 @@ app.get('/', (req, res)=>{
     })
 })
 
+app.get('/Gatos', (req, res)=>{
+    db.query('select * from productos WHERE categoria = "Gatos"',
+    (err,result)=>{
+        if(err)console.log(err)
+        else{
+            res.send(result)
+            console.log("Metodo GET", result)
+        }
+    })
+})
+
+app.get('/Varios', (req, res)=>{
+    db.query('select * from productos WHERE categoria = "Varios"',
+    (err,result)=>{
+        if(err)console.log(err)
+        else{
+            res.send(result)
+            console.log("Metodo GET", result)
+        }
+    })
+})
+
 app.post('/crear', (req,res)=>{
     const ID = req.body.ID;
     const Cantidad = req.body.Cantidad;

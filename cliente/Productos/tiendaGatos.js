@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=> {
 
 const productosDB = async()=>{
  try {
-  const result = await  axios.get('http://localhost:3006/')
+  const result = await  axios.get('http://localhost:3006/Gatos')
   productos = result.data
   tarjetas(productos)
  } catch (error) {
@@ -36,24 +36,17 @@ const tarjetas =(productos)=>{
 
         <div class="px-2 py-2">
           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-            Travel
+            ${Marca}
           </p>
 
           <h2 class="" style="line-height: 1.25;">
-            Planning your final summer trip
+            ${Nombre}
           </h2>
 
           <p class="mb-1">
-            Summer is coming to a close just around the corner. But it's not too late to squeeze in another weekend
-            trip &hellip;
+           $ ${Precio}
           </p>
-
         </div>
-
-        <button href="#0"
-          class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-          delete
-        </button>
       </div>
     </div>
   </div>`
